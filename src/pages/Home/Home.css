@@ -1,0 +1,7 @@
+.home__container {
+  background-image: url("../../assets/gym.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
