@@ -1,0 +1,28 @@
+.exercise__card {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+  border: 1px solid white;
+  padding: 1rem;
+  margin-top: -3rem;
+  border-radius: 10px;
+}
+
+.exercise__image {
+  border-radius: 10px;
+}
+
+.exercise__info {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.labels,
+.exercise__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

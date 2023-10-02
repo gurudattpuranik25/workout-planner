@@ -6,6 +6,7 @@ import Form from "../../components/Form/Form";
 import axios from "axios";
 import ExerciseCard from "./ExerciseCard";
 import { Pagination } from "@mui/material";
+import weightlifting from "../../assets/weightlifting.gif";
 
 function Exercises() {
   const [ageGroup, setAgeGroup] = useState("");
@@ -14,6 +15,7 @@ function Exercises() {
   const [errorMessage, setErrorMessage] = useState("");
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
+  const [isData, setIsData] = useState(false);
 
   const startIndex = (page - 1) * 1;
   const endIndex = page * 1 - 1;
@@ -23,6 +25,7 @@ function Exercises() {
 
   const getExerciseData = async (selectedTargetMuscle) => {
     if (ageGroup === "" || fitnessLevel === "" || targetMuscles === "") {
+      setIsData(true);
       setErrorMessage("Please select the inputs");
       return;
     }
@@ -38,8 +41,10 @@ function Exercises() {
         },
       });
       setErrorMessage("");
+      setIsData(true);
       setData(data);
     } catch (e) {
+      setIsData(true);
       setErrorMessage(
         "Some arror occurred. Please check your connection and retry!"
       );
@@ -69,17 +74,27 @@ function Exercises() {
           setTargetMuscles={setTargetMuscles}
           errorMessage={errorMessage}
           setErrorMessage={setErrorMessage}
+          isData={isData}
           handleSubmit={handleSubmit}
         />
         {/* </QueryClientProvider> */}
       </section>
-      <section className="exercise__data">
-        {paginatedExercises.map((exercise) => (
-          <div key={exercise.id}>
-            <ExerciseCard exercise={exercise} />
-          </div>
-        ))}
-      </section>
+      {!isData ? (
+        <img
+          src={weightlifting}
+          alt="weightlifting gif"
+          className="wieghtlifting__gif"
+        />
+      ) : (
+        <section className="exercise__data">
+          {paginatedExercises.map((exercise) => (
+            <div key={exercise.id}>
+              <ExerciseCard exercise={exercise} />
+            </div>
+          ))}
+        </section>
+      )}
+
       <Pagination
         sx={{
           display: "flex",
@@ -88,6 +103,8 @@ function Exercises() {
         count={totalPages}
         page={page}
         onChange={(e, value) => setPage(value)}
+        className="pagination"
+        color="primary"
       />
     </section>
   );

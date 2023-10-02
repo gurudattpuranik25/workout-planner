@@ -11,11 +11,23 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .form__title {
   color: white;
   font-size: 2rem;
   margin-top: 2rem;
+}
+
+.wieghtlifting__gif {
+  height: 50%;
+  transform: translate(105%, 20%);
+  border-radius: 10px;
+}
+
+.pagination {
+  margin-right: 10rem;
+  margin-top: 1rem;
+  color: white;
 }

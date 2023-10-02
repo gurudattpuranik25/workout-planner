@@ -12,6 +12,7 @@ function Form({
   targetMuscles,
   setTargetMuscles,
   errorMessage,
+  isData,
   handleSubmit,
 }) {
   // const { isLoading, error, data } = useQuery({
@@ -79,7 +80,7 @@ function Form({
         </select>
         <button type="submit">Get my exercises</button>
       </form>
-      <p className="error__message">{errorMessage}</p>
+      {isData && <p className="error__message">{errorMessage}</p>}
     </section>
   );
 }
