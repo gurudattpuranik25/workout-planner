@@ -1,7 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+
 .home__container {
   background-image: url("../../assets/gym.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+
+.hero__section {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 8rem;
+}
+
+.hero__title {
+  width: 50%;
+  font-size: 5rem;
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/10/14/16/background-1814372_640.jpg");
+  font-family: "Tilt Prism", cursive;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+.hero__info {
+  width: 40%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+.hero__info img {
+  width: 5rem;
+  animation: arrow-animation 1s infinite alternate ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes arrow-animation {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
 }

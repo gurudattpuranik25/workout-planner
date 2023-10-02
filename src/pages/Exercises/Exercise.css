@@ -1,0 +1,21 @@
+.exercise__container {
+  background-image: url("../../assets/exercise.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.exercise__form {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form__title {
+  color: white;
+  font-size: 2rem;
+  margin-top: 2rem;
+}

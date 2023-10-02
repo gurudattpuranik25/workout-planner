@@ -14,6 +14,14 @@ function Navbar() {
           <img src={logo} alt="application logo" className="logo__image" />
           <p className="logo__text">FitBit</p>
         </div>
+        <div className="nav__links">
+          <ul>
+            <li>Workouts</li>
+            <li>Gallery</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
         <div className="user__info">
           <p className="user__name">Me</p>
           <img src={avatar} alt="avatar" className="user__image" />

@@ -10,12 +10,27 @@
 .navbar {
   width: 75%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .navbar img {
   width: 3rem;
   height: 3rem;
+}
+
+.nav__links ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__links ul li {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 .logo {

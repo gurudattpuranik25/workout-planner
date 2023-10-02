@@ -5,6 +5,7 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Chest", "Shoulders", "Triceps"],
     fitnessLevel: "Beginner",
+    durationMinutes: 30,
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Back", "Biceps"],
     fitnessLevel: "Intermediate",
+    durationMinutes: 45,
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Quadriceps", "Hamstrings", "Glutes"],
     fitnessLevel: "Beginner",
+    durationMinutes: 35,
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ export const exercises = [
     category: "Core",
     targetMuscles: ["Abs", "Obliques"],
     fitnessLevel: "Beginner",
+    durationMinutes: 25,
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ export const exercises = [
     category: "Cardio",
     targetMuscles: ["Legs", "Cardiovascular system"],
     fitnessLevel: "Intermediate",
+    durationMinutes: 40,
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ export const exercises = [
     category: "Core",
     targetMuscles: ["Abs", "Obliques"],
     fitnessLevel: "Intermediate",
+    durationMinutes: 30,
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ export const exercises = [
     category: "Cardio",
     targetMuscles: ["Legs", "Cardiovascular system"],
     fitnessLevel: "Beginner",
+    durationMinutes: 35,
   },
   {
     id: 8,
@@ -54,6 +61,7 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Shoulders"],
     fitnessLevel: "Intermediate",
+    durationMinutes: 40,
   },
   {
     id: 9,
@@ -61,6 +69,7 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Biceps"],
     fitnessLevel: "Beginner",
+    durationMinutes: 30,
   },
   {
     id: 10,
@@ -68,6 +77,7 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Quadriceps", "Hamstrings", "Glutes"],
     fitnessLevel: "Intermediate",
+    durationMinutes: 50,
   },
   {
     id: 11,
@@ -75,6 +85,7 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Quadriceps", "Hamstrings", "Glutes"],
     fitnessLevel: "Intermediate",
+    durationMinutes: 45,
   },
   {
     id: 12,
@@ -82,6 +93,7 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Calves"],
     fitnessLevel: "Beginner",
+    durationMinutes: 30,
   },
   {
     id: 13,
@@ -89,6 +101,7 @@ export const exercises = [
     category: "Cardio",
     targetMuscles: ["Legs", "Cardiovascular system"],
     fitnessLevel: "Intermediate",
+    durationMinutes: 40,
   },
   {
     id: 14,
@@ -96,6 +109,7 @@ export const exercises = [
     category: "Core",
     targetMuscles: ["Abs"],
     fitnessLevel: "Beginner",
+    durationMinutes: 25,
   },
   {
     id: 15,
@@ -103,6 +117,7 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Triceps"],
     fitnessLevel: "Intermediate",
+    durationMinutes: 35,
   },
   {
     id: 16,
@@ -110,6 +125,7 @@ export const exercises = [
     category: "Core",
     targetMuscles: ["Abs", "Obliques"],
     fitnessLevel: "Intermediate",
+    durationMinutes: 30,
   },
   {
     id: 17,
@@ -117,6 +133,7 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Legs"],
     fitnessLevel: "Advanced",
+    durationMinutes: 55,
   },
   {
     id: 18,
@@ -124,6 +141,7 @@ export const exercises = [
     category: "Cardio",
     targetMuscles: ["Legs", "Cardiovascular system"],
     fitnessLevel: "Intermediate",
+    durationMinutes: 40,
   },
   {
     id: 19,
@@ -131,6 +149,7 @@ export const exercises = [
     category: "Cardio",
     targetMuscles: ["Legs", "Cardiovascular system"],
     fitnessLevel: "Advanced",
+    durationMinutes: 50,
   },
   {
     id: 20,
@@ -138,6 +157,7 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Shoulders", "Triceps"],
     fitnessLevel: "Intermediate",
+    durationMinutes: 45,
   },
   {
     id: 21,
@@ -145,6 +165,7 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Quadriceps", "Hamstrings", "Glutes"],
     fitnessLevel: "Advanced",
+    durationMinutes: 50,
   },
   {
     id: 22,
@@ -152,6 +173,7 @@ export const exercises = [
     category: "Cardio",
     targetMuscles: ["Legs", "Cardiovascular system"],
     fitnessLevel: "Intermediate",
+    durationMinutes: 30,
   },
   {
     id: 23,
@@ -159,6 +181,7 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Quadriceps", "Hamstrings", "Glutes"],
     fitnessLevel: "Advanced",
+    durationMinutes: 55,
   },
   {
     id: 24,
@@ -166,6 +189,7 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Chest", "Shoulders", "Triceps"],
     fitnessLevel: "Intermediate",
+    durationMinutes: 40,
   },
   {
     id: 25,
@@ -173,5 +197,6 @@ export const exercises = [
     category: "Strength",
     targetMuscles: ["Back", "Legs", "Glutes"],
     fitnessLevel: "Advanced",
+    durationMinutes: 55,
   },
 ];

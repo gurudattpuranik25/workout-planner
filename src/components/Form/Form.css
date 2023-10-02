@@ -1,0 +1,45 @@
+.form__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+
+.form__container form {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form select {
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form button {
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.form option {
+  color: black;
+}
+
+.error__message {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
