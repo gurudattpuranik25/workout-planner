@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // import { exercises } from "../../data/data";
 import "./Form.css";
 // import { getExerciseData } from "../../api/api";
