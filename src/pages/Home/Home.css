@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
 
 .home__container {
-  background-image: url("../../assets/gym.avif");
+  /* background-image: url("../../assets/gym.avif"); */
+  background-color: #0e1012;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,22 +22,26 @@
 .hero__title {
   width: 50%;
   font-size: 5rem;
-  background-image: url("https://cdn.pixabay.com/photo/2016/11/10/14/16/background-1814372_640.jpg");
   font-family: "Tilt Prism", cursive;
+  /* background-image: url("https://cdn.pixabay.com/photo/2016/11/10/14/16/background-1814372_640.jpg");
   background-clip: text;
   -webkit-background-clip: text;
+  color: transparent; */
+  background: linear-gradient(red, purple, blue, yellow);
+  background-clip: text;
   color: transparent;
+  -webkit-background-clip: text;
   text-align: center;
 }
 
 .hero__info {
   width: 40%;
-  background-color: white;
   color: black;
   text-align: center;
   padding: 1rem;
   font-size: 2rem;
   border-radius: 10px;
+  box-shadow: inset 0px 0px 0px 1px #566171;
 }
 
 .hero__info img {

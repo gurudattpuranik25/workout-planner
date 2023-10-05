@@ -9,8 +9,8 @@ import { Pagination } from "@mui/material";
 import weightlifting from "../../assets/weightlifting.gif";
 
 function Exercises() {
-  const [ageGroup, setAgeGroup] = useState("");
-  const [fitnessLevel, setFitnessLevel] = useState("");
+  // const [ageGroup, setAgeGroup] = useState("");
+  // const [fitnessLevel, setFitnessLevel] = useState("");
   const [targetMuscles, setTargetMuscles] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [data, setData] = useState([]);
@@ -24,9 +24,9 @@ function Exercises() {
   const totalPages = Math.ceil(totalExercises / 1);
 
   const getExerciseData = async (selectedTargetMuscle) => {
-    if (ageGroup === "" || fitnessLevel === "" || targetMuscles === "") {
+    if (targetMuscles === "") {
       setIsData(true);
-      setErrorMessage("Please select the inputs");
+      setErrorMessage("Please select the target muscle");
       return;
     }
     try {
@@ -35,8 +35,7 @@ function Exercises() {
         url: `https://exercisedb.p.rapidapi.com/exercises/target/${selectedTargetMuscle}`,
         params: { limit: "3" },
         headers: {
-          "X-RapidAPI-Key":
-            "a191927d1cmsh9c738ea7d1c4375p152bf2jsn2882ce34fd96",
+          "X-RapidAPI-Key": import.meta.env.VITE_APP_API_KEY,
           "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
         },
       });
@@ -66,10 +65,10 @@ function Exercises() {
         </h1>
         {/* <QueryClientProvider client={queryClient}> */}
         <Form
-          ageGroup={ageGroup}
-          setAgeGroup={setAgeGroup}
-          fitnessLevel={fitnessLevel}
-          setFitnessLevel={setFitnessLevel}
+          // ageGroup={ageGroup}
+          // setAgeGroup={setAgeGroup}
+          // fitnessLevel={fitnessLevel}
+          // setFitnessLevel={setFitnessLevel}
           targetMuscles={targetMuscles}
           setTargetMuscles={setTargetMuscles}
           errorMessage={errorMessage}

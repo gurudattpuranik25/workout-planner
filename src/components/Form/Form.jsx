@@ -5,10 +5,10 @@ import "./Form.css";
 // import { useQuery } from "react-query";
 
 function Form({
-  ageGroup,
-  setAgeGroup,
-  fitnessLevel,
-  setFitnessLevel,
+  // ageGroup,
+  // setAgeGroup,
+  // fitnessLevel,
+  // setFitnessLevel,
   targetMuscles,
   setTargetMuscles,
   errorMessage,
@@ -23,7 +23,7 @@ function Form({
   return (
     <section className="form__container">
       <form className="form" onSubmit={handleSubmit}>
-        <select
+        {/* <select
           name="age__group"
           id="age__group"
           onChange={(e) => setAgeGroup(e.target.value)}
@@ -50,7 +50,7 @@ function Form({
           <option value="Beginner">Beginner</option>
           <option value="Intermediate">Intermediate</option>
           <option value="Advanced">Advanced</option>
-        </select>
+        </select> */}
         <select
           name="target__muscles"
           id="target__muscles"
