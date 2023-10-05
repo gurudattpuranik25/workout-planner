@@ -26,7 +26,7 @@ function Exercises() {
   const getExerciseData = async (selectedTargetMuscle) => {
     if (targetMuscles === "") {
       setIsData(true);
-      setErrorMessage("Please select the target muscle");
+      setErrorMessage(<p>&#10060; Please select the target muscle</p>);
       return;
     }
     try {
@@ -44,8 +44,12 @@ function Exercises() {
       setData(data);
     } catch (e) {
       setIsData(true);
+      setData([]);
       setErrorMessage(
-        "Some arror occurred. Please check your connection and retry!"
+        <p>
+          &#10060; Some error occurred. Please check your connection and retry /
+          try changing the input!
+        </p>
       );
     }
   };
@@ -93,18 +97,21 @@ function Exercises() {
           ))}
         </section>
       )}
-
-      <Pagination
-        sx={{
-          display: "flex",
-          justifyContent: "end",
-        }}
-        count={totalPages}
-        page={page}
-        onChange={(e, value) => setPage(value)}
-        className="pagination"
-        color="primary"
-      />
+      {data.length !== 0 ? (
+        <Pagination
+          sx={{
+            display: "flex",
+            justifyContent: "end",
+          }}
+          count={totalPages}
+          page={page}
+          onChange={(e, value) => setPage(value)}
+          className="pagination"
+          color="primary"
+        />
+      ) : (
+        ""
+      )}
     </section>
   );
 }

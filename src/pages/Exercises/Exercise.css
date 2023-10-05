@@ -16,7 +16,10 @@
 }
 
 .form__title {
-  color: white;
+  background: linear-gradient(to right, #0083ee, #00d8da);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
   font-size: 2rem;
   margin-top: 2rem;
 }
