@@ -1,25 +1,13 @@
 import React from "react";
-// import { exercises } from "../../data/data";
 import "./Form.css";
-// import { getExerciseData } from "../../api/api";
-// import { useQuery } from "react-query";
 
 function Form({
-  // ageGroup,
-  // setAgeGroup,
-  // fitnessLevel,
-  // setFitnessLevel,
   targetMuscles,
   setTargetMuscles,
   errorMessage,
   isData,
   handleSubmit,
 }) {
-  // const { isLoading, error, data } = useQuery({
-  //   queryKey: ["exercise-data"],
-  //   queryFn: getExerciseData,
-  // });
-
   return (
     <section className="form__container">
       <form className="form" onSubmit={handleSubmit}>

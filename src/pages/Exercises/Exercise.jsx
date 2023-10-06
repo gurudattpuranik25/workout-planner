@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import "./Exercise.css";
 import Form from "../../components/Form/Form";
-// import { QueryClient, QueryClientProvider } from "react-query";
 import axios from "axios";
 import ExerciseCard from "./ExerciseCard";
 import { Pagination } from "@mui/material";
 import weightlifting from "../../assets/weightlifting.gif";
 
 function Exercises() {
-  // const [ageGroup, setAgeGroup] = useState("");
-  // const [fitnessLevel, setFitnessLevel] = useState("");
   const [targetMuscles, setTargetMuscles] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [data, setData] = useState([]);
@@ -26,7 +23,7 @@ function Exercises() {
   const getExerciseData = async (selectedTargetMuscle) => {
     if (targetMuscles === "") {
       setIsData(true);
-      setErrorMessage(<p>&#10060; Please select the target muscle</p>);
+      setErrorMessage("Please select the target muscle");
       return;
     }
     try {
@@ -46,10 +43,7 @@ function Exercises() {
       setIsData(true);
       setData([]);
       setErrorMessage(
-        <p>
-          &#10060; Some error occurred. Please check your connection and retry /
-          try changing the input!
-        </p>
+        "Some error occurred. Please check your connection and retry / try changing the input!"
       );
     }
   };
@@ -59,7 +53,6 @@ function Exercises() {
     getExerciseData(targetMuscles);
   };
 
-  // const queryClient = new QueryClient();
   return (
     <section className="exercise__container">
       <Navbar />
@@ -67,12 +60,7 @@ function Exercises() {
         <h1 className="form__title">
           Your Blueprint to Fitness: Unlocking Potential, One Muscle at a Time!
         </h1>
-        {/* <QueryClientProvider client={queryClient}> */}
         <Form
-          // ageGroup={ageGroup}
-          // setAgeGroup={setAgeGroup}
-          // fitnessLevel={fitnessLevel}
-          // setFitnessLevel={setFitnessLevel}
           targetMuscles={targetMuscles}
           setTargetMuscles={setTargetMuscles}
           errorMessage={errorMessage}
@@ -80,7 +68,6 @@ function Exercises() {
           isData={isData}
           handleSubmit={handleSubmit}
         />
-        {/* </QueryClientProvider> */}
       </section>
       {!isData ? (
         <img

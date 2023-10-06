@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
 
 .home__container {
-  /* background-image: url("../../assets/gym.avif"); */
   background-color: #0e1012;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,10 +22,6 @@
   width: 50%;
   font-size: 5rem;
   font-family: "Tilt Prism", cursive;
-  /* background-image: url("https://cdn.pixabay.com/photo/2016/11/10/14/16/background-1814372_640.jpg");
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent; */
   background: linear-gradient(red, purple, blue, yellow);
   background-clip: text;
   color: transparent;
