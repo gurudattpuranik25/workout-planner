@@ -1,8 +1,16 @@
-# React + Vite
+# FitBit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FitBit is a workout planner that gives you tailored exercises based on the target muscle selected.
 
-Currently, two official plugins are available:
+NPM packages used to support the application are,
+1. react-router-dom
+2. axios
+3. material ui
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/gurudattpuranik25/workout-planner/assets/106954034/0a374283-df4b-4935-b61b-a535b1d94997)
+
+![image](https://github.com/gurudattpuranik25/workout-planner/assets/106954034/309f9340-ce24-478a-a422-d56c6d3709da)
+
+![image](https://github.com/gurudattpuranik25/workout-planner/assets/106954034/3c7d05eb-33db-4c4b-9f64-682586117560)
+
+
