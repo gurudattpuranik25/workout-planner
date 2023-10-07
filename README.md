@@ -7,6 +7,12 @@ NPM packages used to support the application are,
 2. axios
 3. material ui
 
+To run the application in your local system, follow the steps below,
+1. fork the repository
+2. cd workout-planner
+3. npm install
+4. npm run dev
+
 ![image](https://github.com/gurudattpuranik25/workout-planner/assets/106954034/0a374283-df4b-4935-b61b-a535b1d94997)
 
 ![image](https://github.com/gurudattpuranik25/workout-planner/assets/106954034/309f9340-ce24-478a-a422-d56c6d3709da)
